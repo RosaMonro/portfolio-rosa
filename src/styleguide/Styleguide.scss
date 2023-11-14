@@ -1,0 +1,50 @@
+@import "../scss/variables";
+
+.sg {
+  &__color-palette {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+
+  &__pink-section,
+  &__grey-section {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__color-box {
+    width: 100px;
+    height: 100px;
+  }
+
+  &__color {
+    &-fucsia-darken {
+      background-color: $color-fucsia-darken;
+      border: 1px $color-black solid;
+    }
+
+    &-fucsia {
+      background-color: $color-fucsia;
+      border: 1px $color-black solid;
+    }
+
+    &-black {
+      background-color: $color-black;
+      border: 1px $color-black solid;
+    }
+
+    &-grey {
+      background-color: $color-grey;
+      border: 1px $color-black solid;
+    }
+
+    &-white {
+      background-color: $color-white;
+      border: 1px $color-black solid;
+    }
+  }
+}
