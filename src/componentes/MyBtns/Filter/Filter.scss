@@ -23,8 +23,12 @@
   }
 
   &--active {
-    transform: translate(5px);
     background-color: $color-fucsia;
     color: $color-white;
+  }
+
+  &:hover {
+    box-shadow: 1px 1px 1px $color-fucsia;
+    border: 2px $color-fucsia solid;
   }
 }
