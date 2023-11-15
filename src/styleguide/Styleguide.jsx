@@ -1,5 +1,6 @@
 import "./Styleguide.scss";
 import Btn from "../componentes/MyLinks/Btn/Btn";
+import Filter from "../componentes/MyBtns/Filter/Filter";
 
 export default function Styleguide() {
   return (
@@ -35,7 +36,8 @@ export default function Styleguide() {
 
       <div className="sg__mylinks">
         <section className="sg__mylinks-btn">
-          <Btn text="Enlace"></Btn>
+          <Btn text="Haz hover"></Btn>
+          <Filter text="Haz click"></Filter>
         </section>
       </div>
     </body>
