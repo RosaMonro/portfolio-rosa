@@ -1,13 +1,23 @@
 @import "../scss/variables";
 
 .sg {
-  &__color-palette {
+  &__body {
+    margin: 30px;
+    padding: 30px;
+    background-color: $background-color-color-grey;
+  }
+
+  &__colorandtypo {
+    display: flex;
+    gap: 24px;
+  }
+
+  &__color-palette,
+  &__typo {
+    flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    gap: 10px;
-    align-items: center;
-    margin-bottom: 100px;
+    gap: 24px;
   }
 
   &__pink-section,
@@ -19,32 +29,59 @@
   &__color-box {
     width: 100px;
     height: 100px;
+    border-radius: 100px;
   }
 
   &__color {
     &-fucsia-darken {
       background-color: $color-fucsia-darken;
-      border: 1px $color-black solid;
+      border: 1.5px $color-black solid;
     }
 
     &-fucsia {
       background-color: $color-fucsia;
-      border: 1px $color-black solid;
+      border: 1.5px $color-black solid;
     }
 
     &-black {
       background-color: $color-black;
-      border: 1px $color-black solid;
+      border: 1.5px $color-black solid;
     }
 
     &-grey {
       background-color: $color-grey;
-      border: 1px $color-black solid;
+      border: 1.5px $color-black solid;
     }
 
     &-white {
       background-color: $color-white;
-      border: 1px $color-black solid;
+      border: 1.5px $color-black solid;
     }
+  }
+
+  &__typo--headers {
+    font-family: $font-montse;
+    // line-height: 62px;
+
+    & h2 {
+      margin-bottom: 4px;
+    }
+
+    & h3 {
+      margin-bottom: 6px;
+    }
+
+    & h4 {
+      margin-bottom: 8px;
+    }
+
+    & h5 {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__mylinks {
+    margin: 1rem 2.4rem 1rem 2.4rem;
+    padding: 2.4rem;
   }
 }
