@@ -1,0 +1,15 @@
+/*-----mapa y loop de colores---*/
+$colors: (
+  "fucsia": $color-fucsia,
+  "fucsia-darken": $color-fucsia-darken,
+
+  "black": $color-black,
+  "grey": $color-grey,
+  "white": $color-white,
+);
+
+@each $color, $i in $colors {
+  .color-#{$color} {
+    color: $i;
+  }
+}

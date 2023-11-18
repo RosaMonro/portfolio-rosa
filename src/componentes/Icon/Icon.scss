@@ -1,0 +1,42 @@
+@import "../../scss/variables";
+@import "../../scss/mixins";
+
+.icon {
+  &-size--mini {
+    @include icon($w-mini, $h-mini);
+
+    @include mq($bp-tablet) {
+      @include icon($w-small, $h-small);
+    }
+  }
+
+  &-size--medium {
+    @include icon($w-medium, $h-medium);
+
+    @include mq($bp-tablet) {
+      @include icon($w-super, $h-super);
+    }
+  }
+
+  &-hoverable:hover {
+  }
+
+  &__animated {
+    animation-name: moveUpDown;
+    animation-duration: 1.7s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes moveUpDown {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-1rem);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+}

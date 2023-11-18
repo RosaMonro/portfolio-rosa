@@ -1,10 +1,12 @@
 import "./Styleguide.scss";
-import Btn from "../componentes/MyLinks/Btn/Btn";
-import Filter from "../componentes/MyBtns/Filter/Filter";
+// import Filter from "../componentes/MyBtns/Filter/Filter";
+import Icon from "../componentes/Icon/Icon";
+import Link from "../componentes/Links/Link";
+import Button from "../componentes/Buttons/Button";
 
 export default function Styleguide() {
   return (
-    <body className="sg__body">
+    <div className="sg__body">
       <h1>GUÍA DE ESTILOS</h1>
       <h2>Colores y tipografía</h2>
 
@@ -32,14 +34,32 @@ export default function Styleguide() {
         </section>
       </div>
 
-      <h2>Botones y enlaces</h2>
+      <h2>Enlaces y botones</h2>
 
       <div className="sg__mylinks">
-        <section className="sg__mylinks-btn">
-          <Btn text="Haz hover"></Btn>
-          <Filter text="Haz click"></Filter>
-        </section>
+        <div className="sg__linksandbtns">
+          <section className="sg__links">
+            <Link isBtnForm={true} text="Haz hover"></Link>
+            <Link isLinkForm={true} text="Soy un link"></Link>
+            <Link
+              isIconForm={true}
+              icon={
+                <Icon
+                  size={"medium"}
+                  isHoverable={true}
+                  isAnimated={true}
+                  color="fucsia"
+                  name={"IconUpArrow"}
+                  alt="leer más"
+                ></Icon>
+              }
+            ></Link>
+          </section>
+          <section className="sg__btns">
+            <Button isFilterForm={true} text="Haz click"></Button>
+          </section>
+        </div>
       </div>
-    </body>
+    </div>
   );
 }
