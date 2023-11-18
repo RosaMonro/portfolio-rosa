@@ -13,3 +13,16 @@ $colors: (
     color: $i;
   }
 }
+
+/*----fuentes----*/
+
+$fonts: (
+  "gruppo": $font-gruppo,
+  "montse": $font-montse,
+);
+
+@each $font, $i in $fonts {
+  .font-#{$font} {
+    font-family: $i;
+  }
+}

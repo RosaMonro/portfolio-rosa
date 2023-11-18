@@ -78,6 +78,7 @@ export default function Styleguide() {
           <Tag text={"Etiquetas"}></Tag>
         </section>
       </div>
+      <h3 className="lola font-gruppo color-fucsia">hola caracola</h3>
     </div>
   );
 }
