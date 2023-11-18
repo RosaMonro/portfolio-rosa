@@ -1,0 +1,25 @@
+@import "../../scss/variables";
+@import "../../scss/mixins";
+
+.tag {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+
+  padding: 4px 8px;
+  margin: 2px;
+
+  color: $color-fucsia-darken;
+  font-family: $font-montse;
+  font-size: $font-size-16;
+
+  border-radius: 24px;
+  border: 1px solid $color-fucsia;
+  background: $color-white;
+
+  @include mq($bp-tablet) {
+    font-size: $font-size-18;
+    padding: 6px 12px;
+    margin: 4px;
+  }
+}

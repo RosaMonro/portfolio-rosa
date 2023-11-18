@@ -11,13 +11,14 @@ export default function Button(props) {
   if (props.isFilterForm === true) {
     return (
       <button
-        className={`filter ${isActive ? "filter--active" : ""}`}
+        className={`button-filter ${isActive ? "button-filter--active" : ""}`}
         onClick={handleClick}
+        alt={props.text}
       >
         {props.text}
       </button>
     );
-  } else {
-    return null;
+  } else if (props.isIconForm === true) {
+    return <button className="button-icon">{props.icon}</button>;
   }
 }

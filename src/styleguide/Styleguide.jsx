@@ -1,8 +1,8 @@
 import "./Styleguide.scss";
-// import Filter from "../componentes/MyBtns/Filter/Filter";
 import Icon from "../componentes/Icon/Icon";
 import Link from "../componentes/Links/Link";
 import Button from "../componentes/Buttons/Button";
+import Tag from "../componentes/Tags/Tag";
 
 export default function Styleguide() {
   return (
@@ -36,29 +36,47 @@ export default function Styleguide() {
 
       <h2>Enlaces y botones</h2>
 
-      <div className="sg__mylinks">
-        <div className="sg__linksandbtns">
-          <section className="sg__links">
-            <Link isBtnForm={true} text="Haz hover"></Link>
-            <Link isLinkForm={true} text="Soy un link"></Link>
-            <Link
-              isIconForm={true}
-              icon={
-                <Icon
-                  size={"medium"}
-                  isHoverable={true}
-                  isAnimated={true}
-                  color="fucsia"
-                  name={"IconUpArrow"}
-                  alt="leer más"
-                ></Icon>
-              }
-            ></Link>
-          </section>
-          <section className="sg__btns">
-            <Button isFilterForm={true} text="Haz click"></Button>
-          </section>
-        </div>
+      <div className="sg__linksandbtns">
+        <section className="sg__links">
+          <Link isBtnForm={true} text="Haz hover"></Link>
+          <Link isLinkForm={true} text="Soy un link"></Link>
+          <Link
+            isIconForm={true}
+            icon={
+              <Icon
+                size={"medium"}
+                isHoverable={true}
+                isAnimated={true}
+                color="fucsia"
+                name={"IconUpArrow"}
+                alt="subir al inicio de la página"
+              ></Icon>
+            }
+          ></Link>
+        </section>
+
+        <section className="sg__btns">
+          <Button isFilterForm={true} text="Haz click"></Button>
+          <Button
+            isIconForm={true}
+            icon={
+              <Icon
+                size={"medium"}
+                isHoverable={true}
+                isAnimated={false}
+                color="fucsia"
+                name={"IconMore"}
+                alt="leer más"
+              ></Icon>
+            }
+          ></Button>
+        </section>
+
+        <section>
+          <h2>Etiquetas/Tags</h2>
+          <Tag text={"Herramientas"}></Tag>
+          <Tag text={"Etiquetas"}></Tag>
+        </section>
       </div>
     </div>
   );

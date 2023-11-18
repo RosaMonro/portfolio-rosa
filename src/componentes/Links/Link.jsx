@@ -5,8 +5,9 @@ export default function Link(props) {
     return (
       <a
         href={props.url}
-        className="btn"
+        className="link-btn"
         target={props.target ? props.target : "_self"}
+        alt={props.text}
       >
         {props.text}
       </a>
@@ -15,8 +16,9 @@ export default function Link(props) {
     return (
       <a
         href={props.url}
-        className="link"
+        className="link-link"
         target={props.target ? props.target : "_self"}
+        alt={props.text}
       >
         {props.text}
       </a>
@@ -25,11 +27,10 @@ export default function Link(props) {
     return (
       <a
         href={props.url}
-        className="icon"
+        className="link-icon"
         target={props.target ? props.target : "_self"}
       >
         {props.icon}
-        {props.text}
       </a>
     );
   } else {

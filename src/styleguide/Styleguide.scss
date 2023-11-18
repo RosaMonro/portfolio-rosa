@@ -9,8 +9,9 @@
 
   &__colorandtypo,
   &__linksandbtns {
-    display: flex;
-    gap: 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
   }
 
   &__color-palette,
@@ -84,13 +85,8 @@
   &__links,
   &__btns {
     display: flex;
+    align-items: center;
     margin: 1rem;
     gap: 12px;
-
-    // &-btn {
-    //   display: flex;
-    //   align-items: center;
-    //   gap: 24px;
-    // }
   }
 }

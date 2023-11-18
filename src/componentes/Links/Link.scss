@@ -1,71 +1,73 @@
 @import "../../scss/variables";
 @import "../../scss/mixins";
 
-.btn {
-  background-color: $background-color-color-white;
-  color: $color-fucsia-darken;
-  border: 2px $color-fucsia solid;
-  box-shadow: 0 0 1px;
-  transition-duration: 0.3s;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  width: 15rem;
-  height: 4rem;
-  max-width: 15rem;
-  // padding: 16px 32px;
-
-  font-family: $font-gruppo;
-  font-size: $font-size-20;
-  font-weight: bold;
-
-  text-decoration: none;
-  cursor: pointer;
-
-  @include mq($bp-tablet) {
-    width: 24rem;
-    height: 6.5rem;
-    max-width: 27.5rem;
-    font-size: $font-size-24;
-  }
-
-  &:hover {
-    transform: translate(-px);
-    box-shadow: 4px 4px 4px $color-fucsia;
-    border: 2px $color-fucsia solid;
-  }
-
-  &:active,
-  &:focus {
-    transform: translate(5px);
-    box-shadow: 0px 0px 1px;
-  }
-}
-
 .link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  &-btn {
+    background-color: $background-color-color-white;
+    color: $color-fucsia-darken;
+    border: 2px $color-fucsia solid;
+    box-shadow: 0 0 1px;
+    transition-duration: 0.3s;
 
-  color: $color-fucsia-darken;
-  font-family: $font-montse;
-  font-size: $font-size-18;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-  font-weight: 500;
+    width: 15rem;
+    height: 4rem;
+    max-width: 15rem;
+    // padding: 16px 32px;
 
-  cursor: pointer;
-
-  @include mq($bp-tablet) {
+    font-family: $font-gruppo;
     font-size: $font-size-20;
+    font-weight: $font-weight-bold;
+
+    text-decoration: none;
+    cursor: pointer;
+
+    @include mq($bp-tablet) {
+      width: 24rem;
+      height: 6.5rem;
+      max-width: 27.5rem;
+      font-size: $font-size-24;
+    }
+
+    &:hover {
+      transform: translate(-px);
+      box-shadow: 4px 4px 4px $color-fucsia;
+      border: 2px $color-fucsia solid;
+    }
+
+    &:active,
+    &:focus {
+      transform: translate(5px);
+      box-shadow: 0px 0px 1px;
+    }
   }
 
-  &:hover {
-    font-weight: 600;
-  }
-}
+  &-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-.icon {
-  cursor: pointer;
+    color: $color-fucsia-darken;
+    font-family: $font-montse;
+    font-size: $font-size-18;
+
+    font-weight: 500;
+
+    cursor: pointer;
+
+    @include mq($bp-tablet) {
+      font-size: $font-size-20;
+    }
+
+    &:hover {
+      font-weight: $font-weight-semibold;
+    }
+  }
+
+  &-icon {
+    cursor: pointer;
+  }
 }
