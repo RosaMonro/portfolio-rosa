@@ -3,6 +3,8 @@
 h1,
 .h1 {
   font-size: $font-size-42;
+  font-weight: $font-weight-black;
+  color: $color-black;
 
   @include mq($bp-tablet) {
     font-size: $font-size-84;

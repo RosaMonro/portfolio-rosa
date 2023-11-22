@@ -2,6 +2,15 @@
   margin: 0;
 }
 
-.title {
-  margin: 0;
+.m-sections {
+  margin: 2.4rem 1.2rem;
+
+  @include mq($bp-small-tablet) {
+    margin: 14.8rem 9.6rem;
+    max-width: 100rem;
+  }
+}
+
+section {
+  background-color: rgb(149, 209, 149);
 }
