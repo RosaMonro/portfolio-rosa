@@ -10,21 +10,29 @@ export default function Home() {
           <div>
             <Nav></Nav>
           </div>
-          <div className="titles">
+          <div className="header__titles">
             <h2 className="m-none h1 font-montse">
               ROSA <br />
               MONTERO
             </h2>
-            <h1 className="m-none h2 subtitle font-gruppo">UX DESIGNER</h1>
+            <h1 className="m-none h2 header__titles__subtitle font-gruppo">
+              UX DESIGNER
+            </h1>
           </div>
-          <div>
+          <div className="header__p">
             <p>
               Comencé mi viaje como neuropsicóloga, pero mi curiosidad y deseo
               de brindar experiencias significativas a mis pacientes me
               condujeron al mundo de la Experiencia de Usuario y Desarrollo Web.
             </p>
+            <p>
+              Actualmente sigo desarrollando habilidades en backend, frontend y
+              experiencia de usuario para ofrecer una visión y integral una
+              perspectiva holística del proceso de creación de produtos
+              digitales.
+            </p>
           </div>
-          <div className="links">
+          <div className="header__links">
             <Link isBtnForm={true} text="Sobre mí"></Link>
             <Link isBtnForm={true} text="Mi trabajo"></Link>
           </div>

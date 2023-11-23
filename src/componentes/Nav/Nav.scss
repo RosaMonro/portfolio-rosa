@@ -5,9 +5,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 0rem;
 
   @include mq($bp-small-tablet) {
     justify-content: end;
+    margin-top: 1.2rem;
+  }
+
+  @include mq($bp-small-desktop) {
+    justify-content: end;
+    margin-top: 2.4rem;
   }
 }
 
@@ -54,7 +61,6 @@ li {
 
     &:hover {
       // filter: drop-shadow(0 0 5px $color-fucsia);
-
       box-shadow: 0px 4px 4px -4px $color-fucsia, 0px 2px 2px -2px $color-fucsia;
     }
   }
