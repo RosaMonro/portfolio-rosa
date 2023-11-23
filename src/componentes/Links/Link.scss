@@ -26,6 +26,13 @@
     cursor: pointer;
 
     @include mq($bp-tablet) {
+      width: 18rem;
+      height: 5rem;
+      max-width: 27.5rem;
+      font-size: $font-size-18;
+    }
+
+    @include mq($bp-small-desktop) {
       width: 24rem;
       height: 6.5rem;
       max-width: 27.5rem;
@@ -69,5 +76,8 @@
 
   &-icon {
     cursor: pointer;
+    & :hover {
+      filter: drop-shadow(1px 1px 1px $color-fucsia);
+    }
   }
 }

@@ -6,12 +6,10 @@ import "./scss/global.scss";
 function App() {
   return (
     <>
-      <body>
-        <Routes>
-          <Route path="/Styleguide" element={<Styleguide />} />
-          <Route path="/" element={<Home />} />
-        </Routes>
-      </body>
+      <Routes>
+        <Route path="/Styleguide" element={<Styleguide />} />
+        <Route path="/" element={<Home />} />
+      </Routes>
     </>
   );
 }

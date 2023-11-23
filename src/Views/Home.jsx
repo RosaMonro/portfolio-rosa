@@ -1,16 +1,33 @@
 import "./Home.scss";
+import Nav from "../componentes/Nav/Nav";
+import Link from "../componentes/Links/Link";
 
 export default function Home() {
   return (
     <>
-      <header>
-        {/* <Nav></Nav> */}
-        <div className="titles">
-          <h2 className="m-none h1 font-montse">
-            ROSA <br />
-            MONTERO
-          </h2>
-          <h1 className="m-none subtitle font-gruppo">UX DESIGNER</h1>
+      <header className="bg-header">
+        <div className="header">
+          <div>
+            <Nav></Nav>
+          </div>
+          <div className="titles">
+            <h2 className="m-none h1 font-montse">
+              ROSA <br />
+              MONTERO
+            </h2>
+            <h1 className="m-none h2 subtitle font-gruppo">UX DESIGNER</h1>
+          </div>
+          <div>
+            <p>
+              Comencé mi viaje como neuropsicóloga, pero mi curiosidad y deseo
+              de brindar experiencias significativas a mis pacientes me
+              condujeron al mundo de la Experiencia de Usuario y Desarrollo Web.
+            </p>
+          </div>
+          <div className="links">
+            <Link isBtnForm={true} text="Sobre mí"></Link>
+            <Link isBtnForm={true} text="Mi trabajo"></Link>
+          </div>
         </div>
       </header>
 

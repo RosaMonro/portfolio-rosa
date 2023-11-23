@@ -1,11 +1,7 @@
 @import "../scss/variables";
 @import "../scss/mixins";
 
-header {
-  display: flex;
-  height: 100vh;
-  width: 100vw;
-
+.bg-header {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='560' height='800' preserveAspectRatio='none' viewBox='0 0 560 800'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1148%26quot%3b)' fill='none'%3e%3crect width='560' height='800' x='0' y='0' fill='rgba(255%2c 255%2c 255%2c 1)'%3e%3c/rect%3e%3cpath d='M121.54330962824747 175.5599198271015L175.92690973934003 266.06942966834816 284.4993744456637 139.23927458108597z' fill='rgba(243%2c 0%2c 180%2c 1)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M109.76215620000869 264.56467187838007L69.08527896726748 389.3504523036827 181.70893641936996 367.4586309519225z' fill='rgba(243%2c 0%2c 180%2c 1)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M511.96959854551193-27.05331217753344L399.8598020186828 37.67330902602555 576.6962197490709 85.05648434929569z' fill='rgba(243%2c 0%2c 180%2c 1)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M423.544363570433 739.2779007141427L428.7979517199307 679.2291133882163 336.0979766562922 701.3731248269329z' fill='rgba(243%2c 0%2c 180%2c 1)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M131.6269204777436 122.06992703413023L217.43346870229686 103.8311821747462 147.17207730094418-15.759267732391663z' fill='rgba(243%2c 0%2c 180%2c 1)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M57.037682692596114 459.5175492457719L120.32040144766486 410.07567067616964 14.5162242157271 339.87253182836764z' fill='rgba(243%2c 0%2c 180%2c 1)' class='triangle-float1'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1148'%3e%3crect width='560' height='800' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
 
   @include mq($bp-small-tablet) {
@@ -17,21 +13,53 @@ header {
   }
 }
 
+.header {
+  margin: 0 1.8rem;
+
+  display: flex;
+  flex-direction: column;
+  // justify-content: end;
+  height: 100vh;
+
+  @include mq($bp-small-tablet) {
+    margin: 0 3.2rem;
+  }
+
+  @include mq($bp-small-desktop) {
+    margin: 0 6rem;
+  }
+
+  @include mq($bp-desktop) {
+    margin: 0 9.6rem;
+  }
+}
+
 .titles {
   display: flex;
-  justify-content: flex-end;
   flex-direction: column;
+  margin-top: auto;
 }
 
 .subtitle {
   font-weight: $font-weight-lighter;
 }
 
-// .bg-cover {
-//   background-image: url("../imagenes/rosa.png");
-//   background-size: cover;
-//   height: 100vh;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-// }
+.links {
+  display: flex;
+  flex-direction: row;
+  gap: 1.2rem;
+
+  @include mq($bp-small-tablet) {
+    gap: 2.4rem;
+    margin-bottom: 4.8rem;
+  }
+
+  @include mq($bp-small-desktop) {
+    gap: 4.8rem;
+    margin-bottom: 8.4rem;
+  }
+
+  @include mq($bp-desktop) {
+    margin-bottom: 9.6rem;
+  }
+}

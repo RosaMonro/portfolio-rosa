@@ -2,17 +2,45 @@
 
 h1,
 .h1 {
-  font-size: $font-size-42;
+  font-size: $font-size-48;
   font-weight: $font-weight-black;
   color: $color-black;
+  line-height: 1.2;
+
+  @include mq($bp-small-tablet) {
+    font-size: $font-size-60;
+  }
 
   @include mq($bp-tablet) {
     font-size: $font-size-84;
+    line-height: 1;
+  }
+
+  @include mq($bp-small-desktop) {
+    font-size: $font-size-120;
+    line-height: 1;
   }
 }
 
 h2,
 .h2 {
+  font-size: $font-size-40;
+
+  @include mq($bp-small-tablet) {
+    font-size: $font-size-60;
+  }
+
+  @include mq($bp-tablet) {
+    font-size: $font-size-84;
+  }
+
+  @include mq($bp-small-desktop) {
+    font-size: $font-size-120;
+  }
+}
+
+h3,
+.h3 {
   font-size: $font-size-24;
 
   @include mq($bp-tablet) {
@@ -20,8 +48,8 @@ h2,
   }
 }
 
-h3,
-.h3 {
+h4,
+.h4 {
   font-size: $font-size-20;
 
   @include mq($bp-tablet) {
@@ -29,8 +57,8 @@ h3,
   }
 }
 
-h4,
-.h4 {
+h5,
+.h5 {
   font-size: $font-size-16;
 
   @include mq($bp-tablet) {
@@ -38,8 +66,8 @@ h4,
   }
 }
 
-h5,
-.h5 {
+h6,
+.h6 {
   font-size: $font-size-16;
 
   @include mq($bp-tablet) {
@@ -54,6 +82,7 @@ p,
   color: $color-black;
   font-family: $font-montse;
   font-size: $font-size-16;
+  line-height: 1.8;
 
   @include mq($bp-desktop) {
     font-size: $font-size-18;
