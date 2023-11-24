@@ -3,19 +3,19 @@
 }
 
 .m-sections {
-  margin-top: 2.4rem;
-  margin-bottom: 2.4rem;
+  margin-top: 7.2rem;
+  margin-bottom: 7.2rem;
   margin-left: auto;
   margin-right: auto;
 
   @include mq($bp-small-tablet) {
-    margin-top: 4.8rem;
-    margin-bottom: 4.8rem;
+    margin-top: 8.4rem;
+    margin-bottom: 8.4rem;
   }
 
   @include mq($bp-small-desktop) {
-    margin-top: 8.4rem;
-    margin-bottom: 8.4rem;
+    margin-top: 9.6rem;
+    margin-bottom: 9.6rem;
   }
 
   @include mq($bp-desktop) {
@@ -25,5 +25,5 @@
 }
 
 section {
-  background-color: rgb(149, 209, 149);
+  // background-color: rgb(149, 209, 149);
 }

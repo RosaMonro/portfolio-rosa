@@ -5,8 +5,8 @@ import Link from "../componentes/Links/Link";
 export default function Home() {
   return (
     <>
-      <header className="bg-header">
-        <div>
+      <header>
+        <div className="nav">
           <Nav></Nav>
         </div>
         <div className="header">
