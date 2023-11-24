@@ -6,10 +6,10 @@ export default function Home() {
   return (
     <>
       <header className="bg-header">
+        <div>
+          <Nav></Nav>
+        </div>
         <div className="header">
-          <div>
-            <Nav></Nav>
-          </div>
           <div className="header__titles">
             <h2 className="m-none h1 font-montse">
               ROSA <br />

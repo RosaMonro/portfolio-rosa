@@ -16,7 +16,7 @@ h1,
     line-height: 1;
   }
 
-  @include mq($bp-small-desktop) {
+  @include mq($bp-desktop) {
     font-size: $font-size-120;
     line-height: 1;
   }
@@ -34,7 +34,7 @@ h2,
     font-size: $font-size-84;
   }
 
-  @include mq($bp-small-desktop) {
+  @include mq($bp-desktop) {
     font-size: $font-size-120;
   }
 }
