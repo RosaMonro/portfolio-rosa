@@ -6,9 +6,7 @@ export default function Home() {
   return (
     <>
       <header>
-        <div className="nav">
-          <Nav></Nav>
-        </div>
+        <Nav></Nav>
         <div className="header">
           <div className="header__titles">
             <h2 className="m-none h1 font-montse">

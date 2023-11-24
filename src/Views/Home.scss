@@ -10,10 +10,8 @@ header {
   justify-content: space-between;
   height: 100vh;
 }
+
 .header {
-  // display: flex;
-  // flex-direction: column;
-  // height: 100vh;
   &__titles {
     display: flex;
     flex-direction: column;
@@ -31,8 +29,8 @@ header {
 
   &__links {
     display: flex;
-    flex-direction: row;
     gap: 1.2rem;
+    margin-bottom: 2rem;
 
     @include mq($bp-small-tablet) {
       gap: 2.4rem;
