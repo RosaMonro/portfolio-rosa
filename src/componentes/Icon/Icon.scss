@@ -14,6 +14,10 @@
     @include icon($w-medium, $h-medium);
 
     @include mq($bp-tablet) {
+      @include icon($w-large, $h-large);
+    }
+
+    @include mq($bp-small-desktop) {
       @include icon($w-super, $h-super);
     }
   }

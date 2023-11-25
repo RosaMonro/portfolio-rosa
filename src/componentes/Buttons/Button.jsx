@@ -19,6 +19,10 @@ export default function Button(props) {
       </button>
     );
   } else if (props.isIconForm === true) {
-    return <button className="button-icon">{props.icon}</button>;
+    return (
+      <button className="button-icon" onClick={props.onClick}>
+        {props.icon}
+      </button>
+    );
   }
 }

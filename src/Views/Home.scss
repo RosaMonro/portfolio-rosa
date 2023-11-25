@@ -45,7 +45,12 @@ header {
   flex-direction: column;
 
   @include mq($bp-small-desktop) {
-    flex-direction: row;
-    gap: 4.8rem;
+    display: grid;
+    grid-template-columns: repeat(
+      3,
+      1fr
+    ); // Divide el espacio en tres columnas iguales
+
+    grid-gap: 4.8rem;
   }
 }

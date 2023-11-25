@@ -45,15 +45,18 @@ export default function Home() {
         <div className="dropdowns">
           <Dropdown
             title="UX/UI"
-            text="Lorem ipsum dolor sit amet consectetur adipiscing elit habitasse, at tellus curabitur curae aliquam morbi tempor class, id aptent facilisi per ullamcorper egestas nisi. Etiam molestie velit dictumst fermentum porta habitant sapien himenaeos proin gravida curae fringilla pellentesque inceptos primis, eleifend ultrices aptent facilisi varius nullam curabitur bibendum ac tristique litora faucibus senectus. Commodo dis molestie consequat laoreet suspendisse arcu enim, potenti nibh pretium elementum vestibulum donec porta porttitor, iaculis scelerisque ad dignissim fusce maecenas."
+            abstractDescription="orem ipsum dolor sit amet consectetur adipiscing elit habitasse, at t"
+            description="Lorem ipsum dolor sit amet consectetur adipiscing elit habitasse, at tellus curabitur curae aliquam morbi tempor class, id aptent facilisi per ullamcorper egestas nisi. Etiam molestie velit dictumst fermentum porta habitant sapien himenaeos proin gravida curae fringilla pellentesque inceptos primis, eleifend ultrices aptent facilisi varius nullam curabitur bibendum ac tristique litora faucibus senectus. Commodo dis molestie consequat laoreet suspendisse arcu enim, potenti nibh pretium elementum vestibulum donec porta porttitor, iaculis scelerisque ad dignissim fusce maecenas."
           ></Dropdown>
           <Dropdown
             title="Frontend-UI"
-            text="Lorem ipsum dolor sit amet consectetur adipiscing elit habitasse, at tellus curabitur curae aliquam morbi tempor class, id aptent facilisi per ullamcorper egestas nisi. Etiam molestie velit dictumst fermentum porta habitant sapien himenaeos proin gravida curae fringilla pellentesque inceptos primis, eleifend ultrices aptent facilisi varius nullam curabitur bibendum ac tristique litora faucibus senectus. Commodo dis molestie consequat laoreet suspendisse arcu enim, potenti nibh pretium elementum vestibulum donec porta porttitor, iaculis scelerisque ad dignissim fusce maecenas."
+            abstractDescription="orem ipsum dolor sit amet consectetur adipiscing elit habitasse, at t"
+            description="Lorem ipsum dolor sit amet consectetur adipiscing elit habitasse, at tellus curabitur curae aliquam morbi tempor class, id aptent facilisi per ullamcorper egestas nisi. Etiam molestie velit dictumst fermentum porta habitant sapien himenaeos proin gravida curae fringilla pellentesque inceptos primis, eleifend ultrices aptent facilisi varius nullam curabitur bibendum ac tristique litora faucibus senectus. Commodo dis molestie consequat laoreet suspendisse arcu enim, potenti nibh pretium elementum vestibulum donec porta porttitor, iaculis scelerisque ad dignissim fusce maecenas."
           ></Dropdown>
           <Dropdown
             title="Neurociencia"
-            text="Lorem ipsum dolor sit amet consectetur adipiscing elit habitasse, at tellus curabitur curae aliquam morbi tempor class, id aptent facilisi per ullamcorper egestas nisi. Etiam molestie velit dictumst fermentum porta habitant sapien himenaeos proin gravida curae fringilla pellentesque inceptos primis, eleifend ultrices aptent facilisi varius nullam curabitur bibendum ac tristique litora faucibus senectus. Commodo dis molestie consequat laoreet suspendisse arcu enim, potenti nibh pretium elementum vestibulum donec porta porttitor, iaculis scelerisque ad dignissim fusce maecenas."
+            abstractDescription="orem ipsum dolor sit amet consectetur adipiscing elit habitasse, at t"
+            description="Lorem ipsum dolor sit amet consectetur adipiscing elit habitasse, at tellus curabitur curae aliquam morbi tempor class, id aptent facilisi per ullamcorper egestas nisi. Etiam molestie velit dictumst fermentum porta habitant sapien himenaeos proin gravida curae fringilla pellentesque inceptos primis, eleifend ultrices aptent facilisi varius nullam curabitur bibendum ac tristique litora faucibus senectus. Commodo dis molestie consequat laoreet suspendisse arcu enim, potenti nibh pretium elementum vestibulum donec porta porttitor, iaculis scelerisque ad dignissim fusce maecenas."
           ></Dropdown>
         </div>
       </section>
