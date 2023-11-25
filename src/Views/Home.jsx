@@ -1,6 +1,7 @@
 import "./Home.scss";
 import Nav from "../componentes/Nav/Nav";
 import Link from "../componentes/Links/Link";
+import Dropdown from "../componentes/Dropdown/Dropdown";
 
 export default function Home() {
   return (
@@ -38,23 +39,23 @@ export default function Home() {
       </header>
 
       <section className="m-sections">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipiscing elit id eu lacinia,
-          vehicula mauris dapibus vitae nullam blandit consequat himenaeos ante,
-          per ac imperdiet metus hendrerit iaculis turpis velit pellentesque.
-          Morbi eros aliquet est sollicitudin facilisi lectus convallis vel
-          vehicula ac molestie, mi mus fermentum fames risus scelerisque augue
-          odio rhoncus posuere. Habitant tempor tellus convallis venenatis nisl
-          inceptos scelerisque proin luctus congue rhoncus, rutrum per dui quam
-          ac faucibus metus facilisis curabitur aliquam, libero montes interdum
-          feugiat phasellus vitae viverra orci placerat aenean. Vel mollis morbi
-          sociosqu ornare feugiat montes neque mi interdum diam gravida et
-          habitasse, sollicitudin viverra pulvinar lacinia convallis vulputate
-          arcu lobortis tempor habitant tellus enim. Laoreet ligula nascetur
-          pulvinar ullamcorper pellentesque fusce id facilisis, vulputate odio
-          platea fermentum libero dui curabitur vivamus, natoque dictum sapien
-          luctus arc
-        </p>
+        <h2 className="m-none h3 header__titles__subtitle font-gruppo border-b">
+          Sobre mí
+        </h2>
+        <div className="dropdowns">
+          <Dropdown
+            title="UX/UI"
+            text="Lorem ipsum dolor sit amet consectetur adipiscing elit habitasse, at tellus curabitur curae aliquam morbi tempor class, id aptent facilisi per ullamcorper egestas nisi. Etiam molestie velit dictumst fermentum porta habitant sapien himenaeos proin gravida curae fringilla pellentesque inceptos primis, eleifend ultrices aptent facilisi varius nullam curabitur bibendum ac tristique litora faucibus senectus. Commodo dis molestie consequat laoreet suspendisse arcu enim, potenti nibh pretium elementum vestibulum donec porta porttitor, iaculis scelerisque ad dignissim fusce maecenas."
+          ></Dropdown>
+          <Dropdown
+            title="Frontend-UI"
+            text="Lorem ipsum dolor sit amet consectetur adipiscing elit habitasse, at tellus curabitur curae aliquam morbi tempor class, id aptent facilisi per ullamcorper egestas nisi. Etiam molestie velit dictumst fermentum porta habitant sapien himenaeos proin gravida curae fringilla pellentesque inceptos primis, eleifend ultrices aptent facilisi varius nullam curabitur bibendum ac tristique litora faucibus senectus. Commodo dis molestie consequat laoreet suspendisse arcu enim, potenti nibh pretium elementum vestibulum donec porta porttitor, iaculis scelerisque ad dignissim fusce maecenas."
+          ></Dropdown>
+          <Dropdown
+            title="Neurociencia"
+            text="Lorem ipsum dolor sit amet consectetur adipiscing elit habitasse, at tellus curabitur curae aliquam morbi tempor class, id aptent facilisi per ullamcorper egestas nisi. Etiam molestie velit dictumst fermentum porta habitant sapien himenaeos proin gravida curae fringilla pellentesque inceptos primis, eleifend ultrices aptent facilisi varius nullam curabitur bibendum ac tristique litora faucibus senectus. Commodo dis molestie consequat laoreet suspendisse arcu enim, potenti nibh pretium elementum vestibulum donec porta porttitor, iaculis scelerisque ad dignissim fusce maecenas."
+          ></Dropdown>
+        </div>
       </section>
     </>
   );

@@ -1,0 +1,14 @@
+@import "../../scss/variables";
+@import "../../scss/mixins";
+
+.dropdown-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2.4rem;
+
+  @include mq($bp-small-desktop) {
+    margin: 2.4rem;
+    gap: 1.2rem;
+  }
+}

@@ -16,13 +16,13 @@ $w-mini: 2rem;
 $w-small: 3.5rem;
 $w-medium: 4rem;
 $w-large: 5rem;
-$w-super: 6rem;
+$w-super: 5.5rem;
 
 $h-mini: 2rem;
 $h-small: 3.5rem;
 $h-medium: 4rem;
 $h-large: 5rem;
-$h-super: 6rem;
+$h-super: 5.5rem;
 
 @mixin icon($width, $height) {
   width: $width;

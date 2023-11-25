@@ -1,6 +1,10 @@
 @import "../../scss/variables";
 @import "../../scss/mixins";
 
+button {
+  background-color: transparent;
+}
+
 .button {
   &-filter {
     display: flex;
@@ -11,12 +15,12 @@
     height: 40px;
 
     color: $color-fucsia-darken;
+
     font-family: $font-montse;
     font-size: $font-size-16;
 
     border-radius: 24px;
     border: 1px solid $color-fucsia;
-    background: $color-white;
 
     @include mq($bp-tablet) {
       font-size: $font-size-20;

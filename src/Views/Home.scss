@@ -1,9 +1,6 @@
 @import "../scss/variables";
 @import "../scss/mixins";
 
-.nav {
-}
-
 header {
   display: flex;
   flex-direction: column;
@@ -32,11 +29,6 @@ header {
     gap: 1.2rem;
     margin-bottom: 8.4rem;
 
-    // @include mq($bp-small-tablet) {
-    //   gap: 2.4rem;
-    //   margin-bottom: 4.8rem;
-    // }
-
     @include mq($bp-small-desktop) {
       gap: 4.8rem;
       margin-bottom: 8.4rem;
@@ -45,5 +37,15 @@ header {
     @include mq($bp-desktop) {
       margin-bottom: 9.6rem;
     }
+  }
+}
+
+.dropdowns {
+  display: flex;
+  flex-direction: column;
+
+  @include mq($bp-small-desktop) {
+    flex-direction: row;
+    gap: 4.8rem;
   }
 }
