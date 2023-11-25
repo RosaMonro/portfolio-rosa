@@ -30,7 +30,7 @@ header {
   &__links {
     display: flex;
     gap: 1.2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 4.8rem;
 
     @include mq($bp-small-tablet) {
       gap: 2.4rem;
