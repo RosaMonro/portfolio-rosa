@@ -2,6 +2,14 @@
 @import "../../scss/mixins";
 
 .icon {
+  &-size--micro {
+    @include icon($w-micro, $h-micro);
+
+    @include mq($bp-tablet) {
+      @include icon($w-mini, $h-mini);
+    }
+  }
+
   &-size--mini {
     @include icon($w-mini, $h-mini);
 

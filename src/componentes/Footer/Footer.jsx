@@ -11,30 +11,46 @@ export default function Footer() {
         <ul className="footer__ul">
           <li>
             <Icon
-              size={"mini"}
+              size={"micro"}
               color="fucsia"
-              name={"IconHome"}
+              name={"IconMail"}
               alt="Ir a la página principal"
             ></Icon>
-            <a href="">rosamaria.monro@gmail.com</a>
+            <a
+              href="mailto:rosamaria.monro@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              // Al agregar rel="noopener noreferrer", estás asegurándote de que el nuevo documento no tenga acceso al objeto window.opener y estás reduciendo el riesgo de posibles ataques.
+              className="font-gruppo color-black"
+            >
+              rosamaria.monro@gmail.com
+            </a>
           </li>
           <li>
             <Icon
-              size={"mini"}
+              size={"micro"}
               color="fucsia"
-              name={"IconHome"}
+              name={"IconPhone"}
               alt="Ir a la página principal"
             ></Icon>
-            <a href="">600648799</a>
+            <p className="font-gruppo color-black footer-p">600648799</p>
           </li>
           <li>
             <Icon
-              size={"mini"}
+              size={"micro"}
               color="fucsia"
-              name={"IconHome"}
+              name={"IconLinkedin"}
               alt="Ir a la página principal"
             ></Icon>
-            <a href="">Visita mi perfil</a>
+            <a
+              href="https://www.linkedin.com/in/rosamariamonteroroman/"
+              target="_blank"
+              rel="noopener noreferrer"
+              // Al agregar rel="noopener noreferrer", estás asegurándote de que el nuevo documento no tenga acceso al objeto window.opener y estás reduciendo el riesgo de posibles ataques.
+              className="font-gruppo color-black"
+            >
+              Visita mi perfil
+            </a>
           </li>
         </ul>
       </section>
