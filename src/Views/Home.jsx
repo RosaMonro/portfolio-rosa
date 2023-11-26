@@ -15,7 +15,7 @@ export default function Home() {
               MONTERO
             </h2>
             <h1 className="m-none h2 header__titles__subtitle font-gruppo">
-              UX DESIGNER
+              UX DEVELOPER
             </h1>
           </div>
           <div className="header__p">
@@ -24,12 +24,12 @@ export default function Home() {
               de brindar experiencias significativas a mis pacientes me
               condujeron al mundo de la Experiencia de Usuario y Desarrollo Web.
             </p>
-            <p>
+            {/* <p>
               Actualmente sigo desarrollando habilidades en backend, frontend y
               experiencia de usuario para ofrecer una visión y integral una
               perspectiva holística del proceso de creación de produtos
               digitales.
-            </p>
+            </p> */}
           </div>
           <div className="header__links">
             <Link isBtnForm={true} text="Sobre mí"></Link>

@@ -17,7 +17,7 @@ export default function Nav() {
             ></Icon>
           }
         ></Link>
-        <ul>
+        <ul className="nav__ul">
           <li>
             <a className="font-gruppo color-black" href="">
               Proyectos

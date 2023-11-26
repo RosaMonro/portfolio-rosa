@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import Styleguide from "./styleguide/Styleguide";
 import Home from "./Views/Home";
+import Footer from "./componentes/Footer/Footer";
 import "./scss/global.scss";
 
 function App() {
@@ -10,6 +11,8 @@ function App() {
         <Route path="/Styleguide" element={<Styleguide />} />
         <Route path="/" element={<Home />} />
       </Routes>
+
+      <Footer />
     </>
   );
 }
