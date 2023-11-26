@@ -2,7 +2,7 @@
 
 h1,
 .h1 {
-  font-size: $font-size-32;
+  font-size: $font-size-40;
   font-weight: $font-weight-black;
   color: $color-black;
   line-height: 1.2;
@@ -24,7 +24,7 @@ h1,
 
 h2,
 .h2 {
-  font-size: $font-size-32;
+  font-size: $font-size-36;
 
   @include mq($bp-small-tablet) {
     font-size: $font-size-60;
@@ -41,7 +41,7 @@ h2,
 
 h3,
 .h3 {
-  font-size: $font-size-24;
+  font-size: $font-size-32;
   font-weight: $font-weight-medium;
 
   @include mq($bp-tablet) {
