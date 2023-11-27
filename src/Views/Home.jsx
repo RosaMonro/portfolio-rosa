@@ -15,7 +15,7 @@ export default function Home() {
               MONTERO
             </h2>
             <h1 className="m-none h2 header__titles__subtitle font-gruppo">
-              UX DEVELOPERRRRRRRRRR
+              UX DEVELOPERXX
             </h1>
           </div>
           <div className="header__p">
