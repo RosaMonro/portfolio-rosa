@@ -4,7 +4,7 @@ import Icon from "../Icon/Icon";
 import { useState } from "react";
 
 export default function Home(props) {
-  const [expanded, setExpanded] = useState(true);
+  const [expanded, setExpanded] = useState(false);
   const handleButtonClick = () => {
     setExpanded(!expanded);
     console.log("expanded:", expanded);

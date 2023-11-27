@@ -31,12 +31,12 @@ header {
 
     @include mq($bp-tablet) {
       gap: 4.8rem;
-      margin-bottom: 6rem;
+      margin-bottom: 8.4rem;
     }
 
     @include mq($bp-small-desktop) {
       gap: 4.8rem;
-      margin-bottom: 6rem;
+      margin-bottom: 8.4rem;
     }
 
     @include mq($bp-desktop) {
