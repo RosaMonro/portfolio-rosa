@@ -27,21 +27,21 @@ header {
   &__links {
     display: flex;
     gap: 1.2rem;
-    margin-bottom: 8.4rem;
+    margin-bottom: 9rem;
 
     @include mq($bp-tablet) {
-      gap: 4.8rem;
-      // margin-bottom: 9rem;
-    }
-
-    @include mq($bp-small-desktop) {
       gap: 4.8rem;
       margin-bottom: 9rem;
     }
 
-    @include mq($bp-desktop) {
-      margin-bottom: 10.2rem;
-    }
+    // @include mq($bp-small-desktop) {
+    //   gap: 4.8rem;
+    //   margin-bottom: 9rem;
+    // }
+
+    // @include mq($bp-desktop) {
+    //   margin-bottom: 9rem;
+    // }
   }
 }
 
