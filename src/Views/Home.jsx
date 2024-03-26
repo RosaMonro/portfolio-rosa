@@ -25,10 +25,8 @@ export default function Home() {
               condujeron al mundo de la Experiencia de Usuario y Desarrollo Web.
             </p>
             {/* <p>
-              Actualmente sigo desarrollando habilidades en backend, frontend y
-              experiencia de usuario para ofrecer una visión y integral una
-              perspectiva holística del proceso de creación de produtos
-              digitales.
+              Ahora busco poder ofrecer una visión integral y una perspectiva
+              holística del proceso de creación de produtos digitales.
             </p> */}
           </div>
           <div className="header__links">
